@@ -1,0 +1,43 @@
+{
+  "name": "Sten ter Stal",
+  "title": "Software Engineer",
+  "email": "mail@stenterstal.com",
+  "github": "stenterstal",
+  "linkedin": "stenterstal",
+  "about": {
+    "description": "Software Engineering student at Saxion, I'm interested in everything computer related and have a special interest in Web Development and Smart Home Automation. I mainly code in JavaScript but also have experience with Java, C# and Python.",
+    "birthdate": "20-02-2000",
+    "nationality": "Dutch",
+    "location": "Enschede, The Netherlands",
+    "experience": [
+      {
+        "title": "Automation Projects - MFA De Zweede",
+        "date": "2020",
+        "description": "Automation of generating and sending invoices and emails to donators.",
+        "readmore": "#automationprojects"
+      },
+      {
+        "title": "React Native Application - KCW (School project)",
+        "date": "2020",
+        "description": "React Native application made for mobile devices and web using a CMS as backend. Implementation of a subscription service using a payment provider.",
+        "readmore": "#reactnative"
+      },
+      {
+        "title": "Web Design - WarmStal D!sign",
+        "date": "2018",
+        "description": "Building and Customizing of websites using WordPress"
+      }
+    ],
+    "education": [
+      {
+        "title": "Software Engineering - Saxion Enschede",
+        "date": "2018 - Current"
+      },
+      {
+        "title": "Secondary School - Bonhoeffer College",
+        "date": "2012 - 2018",
+        "description": "Computer Science as optional subject"
+      }
+    ]
+  }
+}
