@@ -38,6 +38,73 @@
         "date": "2012 - 2018",
         "description": "Computer Science as optional subject"
       }
+    ],
+    "skills": [
+      [
+        {
+          "title": "JavaScript",
+          "experience": "Advanced",
+          "percentage": "100%"
+        },
+        {
+          "title": "HTML, CSS (LESS / SASS)",
+          "experience": "Good",
+          "percentage": "80%"
+        },
+        {
+          "title": "Java",
+          "experience": "Good",
+          "percentage": "80%"
+        },
+        {
+          "title": "Python",
+          "experience": "Intermediate",
+          "percentage": "50%"
+        },
+        {
+          "title": "C#",
+          "experience": "Basic",
+          "percentage": "35%"
+        }
+      ],
+      [
+        {
+          "title": "React (Native)",
+          "experience": "Good",
+          "percentage": "80%"
+        },
+        {
+          "title": "(No) SQL",
+          "experience": "Good",
+          "percentage": "80%"
+        },
+        {
+          "title": "Android",
+          "experience": "Intermediate",
+          "percentage": "50%"
+        },
+        {
+          "title": "Git",
+          "experience": "Intermediate",
+          "percentage": "50%"
+        },
+        {
+          "title": "Docker",
+          "experience": "Basic",
+          "percentage": "35%"
+        }
+      ]
     ]
-  }
+  },
+  "projects": [
+    {
+      "title": "Automation - MFA De Zweede",
+      "badges": [
+        ["node", "https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"],
+        ["javascript", "https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"]
+      ],
+      "description": "Automation of generating and sending invoices and personalized emails to donators using Node.JS as ecosystem, XLSX to read Excel, Nodemailer to send mail and PDF-LIB to generate personalized letters.\n\nTo keep donators updated on the status of the project and their donation MFA De Zweede needed to send each of them a mail with a personalized letter attached. Because existing platforms like mailchimp don’t offer the generation of personalized letters by template this needed to be automated.\n\nSending the invoices was done using the FactuurSturen.nl RESTFul API",
+      "source": "https://github.com/stenterstal/stenterstal.com"
+    }
+  ]
 }

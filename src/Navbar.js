@@ -24,9 +24,9 @@ export default class Navbar extends React.Component {
         const navbarHeight = document.getElementsByTagName("nav")[0].scrollHeight;
         // TODO: Tidy this
         if(window.screen.width > 750){
-            if(window.scrollY >= landingPageHeight-navbarHeight && this.state.fixed === false){
+            if(window.scrollY >= landingPageHeight-(navbarHeight/2) && this.state.fixed === false){
                 this.setState({fixed: true});
-            } else if(window.scrollY < landingPageHeight-navbarHeight){
+            } else if(window.scrollY < landingPageHeight-(navbarHeight/2)){
                 this.setState({fixed: false});
             }
         } else {
@@ -49,7 +49,7 @@ export default class Navbar extends React.Component {
             <nav className={this.state.fixed ? "nav fixed" : "nav"}>
                 <ul className={this.state.hidden ? "hidden" : ""}>
                     <li onClick={() => this.scrollTo("about")}>About</li>
-                    <li>Projects</li>
+                    <li onClick={() => this.scrollTo("projects")}>Projects</li>
                     <li>Contact</li>
                 </ul>
                 <img src={menu} alt="Toggle Menu" className="hamburger" onClick={() => {

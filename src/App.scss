@@ -28,6 +28,22 @@ $breakpoint: 750px;
   border: 0;
   position: absolute;
   font-family: $font;
+  color: $text-primary;
+}
+
+h1 {
+  font-size: 2.2vw;
+  font-weight: 900;
+}
+h2 {
+  font-size: 1.7vw;
+}
+h3 {
+  font-size: 1.1vw;
+}
+h4 {
+  font-size: 0.8vw;
+  font-weight: 600;
 }
 
 /**
@@ -92,7 +108,7 @@ $breakpoint: 750px;
             color: $text_primary;
             text-decoration: none;
             text-transform: uppercase;
-            font-size: 1vw;
+            font-size: 0.9vw;
             font-family: $font;
             font-weight: 700;
             $padding: 18px;
@@ -110,13 +126,12 @@ $breakpoint: 750px;
     justify-content: center;
     .link {
       h5 {
-        color: $text_primary;
-        font-size: 0.8vw;
+        font-size: 16px;
       }
       a {
         color: $text_primary;
         text-decoration: none;
-        font-size: 0.7vw;
+        font-size: 14px;
         &:hover {
           text-decoration: underline;
         }
@@ -138,6 +153,7 @@ nav {
   $height: 8vh;
   $width: 60vw;
   position: absolute;
+  z-index: 1001;
   background-color: $primary;
   height: $height;
   width: $width;
@@ -159,7 +175,7 @@ nav {
       text-transform: uppercase;
       text-decoration: none;
       font-family: $font;
-      font-size: 1.1vw;
+      font-size: 1vw;
       font-weight: 700;
       cursor: pointer;
     }
@@ -172,27 +188,20 @@ nav {
 .fixed {
   position: fixed;
   margin-top: 0;
-  top: 4vh;
+  top: 0;
 }
 
 .about {
-  //height: 300%;
   width: 100%;
   background-color: $background_light;
   .container {
     width: 60vw;
     margin-left: 20vw;
-    padding: 180px 0 100px 0;
-    h1 {
-      font-size: 2.2vw;
-      font-weight: 900;
-      color: $text_primary;
-    }
+    padding: 6% 0 80px 0;
     .col {
       display: flex;
       flex-direction: row;
       flex: 1;
-      color: $text_primary;
       margin-top: 12px;
       .col-3 {
         display: flex;
@@ -210,12 +219,9 @@ nav {
           font-weight: 700;
         }
       }
-      h2 {
-        font-size: 1.7vw;
-        padding-bottom: 12px;
-      }
       .col {
         flex-direction: column;
+        padding-bottom: 20px;
         .section {
           border-left: 4px solid $primary;
           padding: 20px;
@@ -245,6 +251,84 @@ nav {
             text-decoration: none;
             color: $text_accent;
           }
+        }
+      }
+    }
+    .skills-container {
+      .col {
+        display: flex;
+        width: 100%;
+        .col {
+          flex-direction: column;
+          display: flex;
+          $margin: 30px;
+          margin: 0 $margin 0 0;
+          &:last-child {
+            margin: 0 0 0 $margin;
+          }
+          .skill {
+            padding: 10px 0 10px 0;
+            .bar {
+              width: 100%;
+              height: 30px;
+              align-items: center;
+              flex-direction: row;
+              display: flex;
+              .outer {
+                width: 100%;
+                height: 12px;
+                background-color: $background_dark;
+                .inner {
+                  height: 100%;
+                  background-color: $primary;
+                }
+              }
+              p {
+                margin-left: 20px;
+                width: 140px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.projects {
+  width: 100%;
+  background-color: $background_dark;
+  .container {
+    width: 60vw;
+    margin-left: 20vw;
+    padding: 100px 0 1000px 0;
+    .projects-container {
+      width: 100%;
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      .project {
+        width: 46%;
+        margin: 2% 4% 2% 0;
+        h3 {
+          padding-bottom: 6px;
+        }
+        .badges {
+          padding-bottom: 6px;
+        }
+        a {
+          svg {
+            height: 24px;
+            padding-right: 6px;
+            path {
+              fill: $text_accent;
+            }
+          }
+          color: $text_accent;
+          text-decoration: none;
+          margin-top: 20px;
+          display: flex;
+          align-items: center;
         }
       }
     }
@@ -319,7 +403,6 @@ nav {
         display: flex;
         flex-direction: column;
         h5 {
-          color: $text_primary;
           font-size: 14px;
           display: inline;
         }
@@ -390,6 +473,9 @@ nav {
       h1 {
         font-size: 36px;
       }
+      h2 {
+        font-size: 28px;
+      }
       .col {
         flex-direction: column;
         .col-3 {
@@ -399,10 +485,6 @@ nav {
           flex: 1;
           width: 100%;
           margin-top: 15px;
-        }
-        h2 {
-          font-size: 28px;
-          padding: 14px 0 14px 0;
         }
         .col {
           .section {
@@ -423,7 +505,6 @@ nav {
               }
             }
             .date {
-              color: $text_secondary;
               padding-bottom: 5px;
             }
             .description {
@@ -431,7 +512,29 @@ nav {
             }
             .readmore {
               text-decoration: none;
-              color: $text_accent;
+            }
+          }
+        }
+      }
+      .skills-container {
+        h3 {
+          font-size: 18px;
+        }
+        h4 {
+          font-size: 14px;
+        }
+        .col {
+          .col {
+            margin: 0;
+            &:last-child {
+              margin: 0;
+            }
+            .skill {
+              p {
+                margin-left: 20px;
+                font-size: 12px;
+                width: 140px;
+              }
             }
           }
         }
