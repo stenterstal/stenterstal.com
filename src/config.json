@@ -103,7 +103,11 @@
         ["node", "https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"],
         ["javascript", "https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"]
       ],
-      "description": "Automation of generating and sending invoices and personalized emails to donators using Node.JS as ecosystem, XLSX to read Excel, Nodemailer to send mail and PDF-LIB to generate personalized letters.\n\nTo keep donators updated on the status of the project and their donation MFA De Zweede needed to send each of them a mail with a personalized letter attached. Because existing platforms like mailchimp don’t offer the generation of personalized letters by template this needed to be automated.\n\nSending the invoices was done using the FactuurSturen.nl RESTFul API"
+      "description": [
+        "Automation of generating and sending invoices and personalized emails to donators using Node.JS as ecosystem, XLSX to read Excel, Nodemailer to send mail and PDF-LIB to generate personalized letters.",
+        "To keep donators updated on the status of the project and their donation MFA De Zweede needed to send each of them a mail with a personalized letter attached. Because existing platforms like mailchimp don’t offer the generation of personalized letters by template this needed to be automated.",
+        "Sending the invoices was done using the FactuurSturen.nl RESTFul API"
+      ]
     },
     {
       "title": "Lifeskills - KCW (School project)",
@@ -114,7 +118,11 @@
         ["postgres", "https://img.shields.io/badge/postgres-%23316192.svg?&style=for-the-badge&logo=postgresql&logoColor=white"],
         ["strapi", "https://img.shields.io/badge/strapi%20-%232E7EEA.svg?&style=for-the-badge&logo=strapi&logoColor=white"]
       ],
-      "description": "Automation of generating and sending invoices and personalized emails to donators using Node.JS as ecosystem, XLSX to read Excel, Nodemailer to send mail and PDF-LIB to generate personalized letters.\n\nTo keep donators updated on the status of the project and their donation MFA De Zweede needed to send each of them a mail with a personalized letter attached. Because existing platforms like mailchimp don’t offer the generation of personalized letters by template this needed to be automated.\n\nSending the invoices was done using the FactuurSturen.nl RESTFul API"
+      "description": [
+        "Automation of generating and sending invoices and personalized emails to donators using Node.JS as ecosystem, XLSX to read Excel, Nodemailer to send mail and PDF-LIB to generate personalized letters.",
+        "To keep donators updated on the status of the project and their donation MFA De Zweede needed to send each of them a mail with a personalized letter attached. Because existing platforms like mailchimp don’t offer the generation of personalized letters by template this needed to be automated.",
+        "Sending the invoices was done using the FactuurSturen.nl RESTFul API"
+      ]
     },
     {
       "title": "Stenterstal.com",
@@ -124,7 +132,9 @@
         ["javascript", "https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"],
         ["github", "https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"]
       ],
-      "description": "Customizable personal website. Using a JSON file as storage for easy editing of information and SCSS variables to easily change the color palette. Code and website hosted on github, open source under MIT license",
+      "description": [
+        "Customizable personal website. Using a JSON file as storage for easy editing of information and SCSS variables to easily change the color palette. Code and website hosted on github, open source under MIT license"
+      ],
       "source": "https://github.com/stenterstal/stenterstal.com"
     }
   ]
