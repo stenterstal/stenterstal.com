@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {Component, createRef} from 'react';
 import menu from "./img/menu.svg";
+import {scrollToFromNavigation} from './Scroller';
 
-export default class Navbar extends React.Component {
+export default class Navbar extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -10,6 +11,9 @@ export default class Navbar extends React.Component {
         }
     }
 
+    hide = () => {
+        this.setState({hidden: true});
+    };
 
     componentDidMount() {
         window.addEventListener('scroll', this.handleScroll);
@@ -48,9 +52,9 @@ export default class Navbar extends React.Component {
         return(
             <nav className={this.state.fixed ? "nav fixed" : "nav"}>
                 <ul className={this.state.hidden ? "hidden" : ""}>
-                    <li onClick={() => this.scrollTo("about")}>About</li>
-                    <li onClick={() => this.scrollTo("projects")}>Projects</li>
-                    <li>Contact</li>
+                    <li onClick={() => scrollToFromNavigation(this, "about")}>About</li>
+                    <li onClick={() => scrollToFromNavigation(this, "projects")}>Projects</li>
+                    <li onClick={() => scrollToFromNavigation(this, "contact")}>Contact</li>
                 </ul>
                 <img src={menu} alt="Toggle Menu" className="hamburger" onClick={() => {
                     this.setState({
