@@ -1,6 +1,6 @@
 import React, {Component, createRef} from 'react';
 import menu from "./img/menu.svg";
-import {scrollToFromNavigation} from './Scroller';
+import {scrollTo} from './Scroller';
 
 export default class Navbar extends Component {
     constructor(props) {
@@ -8,20 +8,35 @@ export default class Navbar extends Component {
         this.state = {
             fixed: false,
             hidden: true,
+            height: 0,
         }
     }
+
+    navBarRef = createRef();
+
+    componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+        window.addEventListener('resize', this.resizeWindow);
+        this.resizeWindow();
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+        window.removeEventListener('resize', this.resizeWindow);
+    }
+
+    resizeWindow = () => {
+        let height = this.navBarRef.current.getBoundingClientRect().height;
+        this.setState({height});
+    };
 
     hide = () => {
         this.setState({hidden: true});
     };
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
+    getHeight = () => {
+        return Math.round(this.state.height);
+    };
 
     handleScroll = () => {
         const landingPageHeight = document.getElementsByClassName("landing")[0].scrollHeight;
@@ -42,19 +57,13 @@ export default class Navbar extends Component {
         }
     };
 
-    scrollTo = (selector) => {
-        this.setState({hidden: true});
-        const el = document.getElementById(selector);
-        window.scroll({top: el.offsetTop+5, left: 0, behavior: "smooth"});
-    };
-
     render() {
         return(
-            <nav className={this.state.fixed ? "nav fixed" : "nav"}>
+            <nav className={this.state.fixed ? "nav fixed" : "nav"} ref={this.navBarRef}>
                 <ul className={this.state.hidden ? "hidden" : ""}>
-                    <li onClick={() => scrollToFromNavigation(this, "about")}>About</li>
-                    <li onClick={() => scrollToFromNavigation(this, "projects")}>Projects</li>
-                    <li onClick={() => scrollToFromNavigation(this, "contact")}>Contact</li>
+                    <li onClick={() => scrollTo(this, "about")}>About</li>
+                    <li onClick={() => scrollTo(this, "projects")}>Projects</li>
+                    <li onClick={() => scrollTo(this, "contact")}>Contact</li>
                 </ul>
                 <img src={menu} alt="Toggle Menu" className="hamburger" onClick={() => {
                     this.setState({

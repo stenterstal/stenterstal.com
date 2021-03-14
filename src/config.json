@@ -14,13 +14,13 @@
         "title": "Automation Projects - MFA De Zweede",
         "date": "2020",
         "description": "Automation of generating and sending invoices and emails to donators.",
-        "readmore": "#automationprojects"
+        "readMoreID": "automationprojects"
       },
       {
         "title": "Lifeskills - KCW (School project)",
         "date": "2020",
         "description": "React Native application made for mobile devices and web using a CMS as backend. Implementation of a subscription service using a payment provider.",
-        "readmore": "#reactnative"
+        "readMoreID": "lifeskills"
       },
       {
         "title": "Web Design - WarmStal D!sign",
@@ -99,6 +99,7 @@
   "projects": [
     {
       "title": "Automation - MFA De Zweede",
+      "id": "automationprojects",
       "badges": [
         ["node", "https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"],
         ["javascript", "https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E"]
@@ -111,6 +112,7 @@
     },
     {
       "title": "Lifeskills - KCW (School project)",
+      "id": "lifeskills",
       "badges": [
         ["react-native", "https://img.shields.io/badge/react_native%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"],
         ["node", "https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"],

@@ -6,7 +6,7 @@ $font: 'Montserrat', sans-serif;
 /* Define colors */
 $text_primary: #FFFFFF;
 $text_secondary: #D4D4D4;
-$text_accent: #DA6076;
+$text_accent: #D37A8B;
 
 $primary: #D3435E;
 $primary_tint: #B32A43;
@@ -103,11 +103,12 @@ h4 {
           &:last-child {
             margin-left: (100% - (2*$width))/2;
           }
-          a {
+          a, p {
             background-color: $primary;
             border-bottom: 5px solid $primary_tint;
             border-right: 5px solid $primary_tint;
             display: block;
+            cursor: pointer;
             color: $text_primary;
             text-decoration: none;
             text-transform: uppercase;
@@ -128,8 +129,9 @@ h4 {
     display: flex;
     justify-content: center;
     .link {
-      h5 {
+      p {
         font-size: 16px;
+        font-weight: 500;
       }
       a {
         color: $text_primary;
@@ -258,6 +260,7 @@ nav {
           .readmore {
             text-decoration: none;
             color: $text_accent;
+            cursor: pointer;
           }
         }
       }
