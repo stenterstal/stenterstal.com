@@ -1,6 +1,6 @@
 import React, {Component, createRef} from 'react';
-import menu from "./img/menu.svg";
-import {scrollTo} from './Scroller';
+import menu from "../img/menu.svg";
+import {scrollTo} from '../util/Scroller';
 
 export default class Navbar extends Component {
     constructor(props) {

@@ -1,12 +1,17 @@
 import './App.scss';
 import React, {createRef} from "react";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 import github from "./img/github.svg";
 import profile from "./img/profile.png";
 import config from "./config.json";
-import {scrollTo, scrollToProject} from "./Scroller";
+import {scrollTo, scrollToProject} from "./util/Scroller";
+import Mailform from "./components/Mailform";
 
 // TODO: Add email functionality using EmailJS
+// TODO: Add CAPTCHA to email form
+// TODO: Add regex for mailadress in mailform
+// TODO: Change mail focus style
+
 // TODO: Add download svg to Resume -> maybe make a english resume
 // TODO: Media query between desktop and mobile
 // TODO: Fix lighthouse scores to 100% on all
@@ -182,32 +187,7 @@ class App extends React.Component {
                     </div>
                 </div>
                 <div className="contact" id="contact">
-                    <div className="container">
-                        <h1>Contact</h1>
-                        <div className="col-2">
-                            <div className="form">
-                                <div className="header">
-                                    <input type="text" placeholder="Name"/>
-                                    <input type="text" placeholder="Email"/>
-                                    <input type="text" placeholder="Subject"/>
-                                </div>
-                                <div className="message">
-                                    <textarea placeholder="Message"/>
-                                </div>
-                            </div>
-                            <div className="info">
-                                <p className="info-text">
-                                    If you like my work or want to talk tech feel free to contact me.
-                                </p>
-                                <div>
-                                    <p className="title">Email: <a tabIndex={-1}
-                                                                   href={"mailto:" + config.email}>{config.email}</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="submit" value="SEND EMAIL" className="submit"/>
-                    </div>
+                    <Mailform/>
                 </div>
                 <div className="footer">
                     <div className="container">
