@@ -152,23 +152,23 @@ class App extends React.Component {
                         <div className="projects-container">
                             {
                                 config.projects.map((project) => (
-                                    <div className="project" id={project.id}>
+                                    <div className="project" id={project.id} key={project.title}>
                                         <h3>{project.title}</h3>
                                         {project.badges != null && project.badges.length > 0 &&
                                         <div className="badges">
                                             {
-                                                project.badges.map((badge) => (
-                                                    <img src={badge[1]} alt={badge[0]}/>
+                                                project.badges.map((badge, index) => (
+                                                    <img src={badge[1]} alt={badge[0]} key={project.title+"-badge-"+index}/>
                                                 ))
                                             }
                                         </div>
                                         }
                                         {
                                             project.description.map((paragraph, index) =>
-                                                <>
+                                                <div key={project.title + "-paragraph-"+index}>
                                                     <p className="wrap">{paragraph}</p>
                                                     {index !== project.description.size ? <br/> : null}
-                                                </>)
+                                                </div>)
                                         }
                                         {project.source != null &&
                                         <a href={project.source}>

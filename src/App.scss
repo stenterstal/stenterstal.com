@@ -19,7 +19,8 @@ $error: #FF0033; //#ED4337 #FF0033 #AF0606
 //FFD622
 
 /* Define breakpoints */
-$breakpoint: 750px;
+$breakpoint_mobile: 750px;
+$breakpoint_screen_large: 1200px;
 
 /* Container width */
 $container-width: 70vw;
@@ -479,7 +480,7 @@ nav {
 }
 
 // Mobile
-@media (max-width: $breakpoint) {
+@media (max-width: $breakpoint_mobile) {
   h1 {
     font-size: 34px;
   }
