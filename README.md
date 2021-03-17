@@ -3,8 +3,14 @@
   <p align="center">Personal portfolio and resume using React and hosted on Github Pages</p>
 </p>
 
-# Usage
+<div align="left">
+  <h1 align="center">Usage</h1>
+</p>
 
-# Customization
+<div align="left">
+  <h1 align="center">Customization</h1>
+</p>
 
-# Used Colors
+<div align="left">
+  <h1 align="center">Used colors</h1>
+</p>
