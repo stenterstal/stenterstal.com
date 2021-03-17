@@ -11,3 +11,13 @@
 # Customization
 
 # Used colors
+
+| Color                         | Hex                                                                |
+| ----------------------------- | ------------------------------------------------------------------ |
+| White (Text primary)          | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+) `#FFFFFF` |
+| Light Gray (Text secondary)   | ![#D4D4D4](https://via.placeholder.com/10/D4D4D4?text=+) `#D4D4D4` |
+| Pink (Theme color)            | ![#D3435E](https://via.placeholder.com/10/D3435E?text=+) `#D3435E` |
+| Dark Pink (Theme color tint)  | ![#B32A43](https://via.placeholder.com/10/B32A43?text=+) `#B32A43` |
+| Background Dark               | ![#132334](https://via.placeholder.com/10/132334?text=+) `#132334` |
+| Background light              | ![#1C334B](https://via.placeholder.com/10/1C334B?text=+) `#1C334B` |
+| Error                         | ![#FF0033](https://via.placeholder.com/10/FF0033?text=+) `#FF0033` |
