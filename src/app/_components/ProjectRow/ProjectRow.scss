@@ -1,0 +1,42 @@
+$element-height: 6.5em; // Thumbnail size is linked to this
+.project {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  gap: 15px;
+  height: $element-height;
+  cursor: pointer;
+  //border: 1px solid transparent;
+  //padding: 8px;
+  border-radius: 3px;
+  &:hover {
+    //border: 1px solid #535bf2;
+    background-color: #1a1a1a;
+  }
+  .thumbnail {
+    width: $element-height;
+    border-radius: 3px;
+  }
+  .text {
+    padding: 8px;
+    overflow: hidden;
+    flex-direction: column;
+    h3 {
+      flex-shrink: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin: 0;
+    }
+    p {
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: normal;
+      //text-align: justify;
+      margin: 0;
+    }
+  }
+}

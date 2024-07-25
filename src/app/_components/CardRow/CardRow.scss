@@ -1,0 +1,42 @@
+$space-between-cardrows: 50px;
+$space-between-inner-sections: 10px;
+
+.CardRow {
+  margin: $space-between-cardrows  0 $space-between-cardrows 0;
+  border-left: 3px solid #646cff;
+  border-radius: 3px;
+  padding-left: 16px;
+
+  h3 {
+    margin: 0;
+  }
+  .subtitle {
+    margin-top: 2px;
+    color: #bdbdbd
+  }
+  p {
+    margin: 0;
+  }
+  .content {
+    margin-top: $space-between-inner-sections;
+    ul {
+      margin: $space-between-inner-sections 0;
+      li {
+        font-size: 1em;
+      }
+    }
+  }
+  .tags {
+    padding: 0;
+    margin-top: $space-between-inner-sections;
+    li {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 0.875em;
+      background-color: #646cff;
+      margin: 4px 8px 4px 0;
+      &:last-child { margin-right: 0 }
+    }
+  }
+}
