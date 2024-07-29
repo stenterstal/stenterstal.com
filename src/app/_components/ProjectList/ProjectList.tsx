@@ -1,7 +1,7 @@
 'use client'
 
 import {Project} from "@/interfaces/project.ts";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import ProjectRow from "@/app/_components/ProjectRow";
 import './ProjectList.scss'
 

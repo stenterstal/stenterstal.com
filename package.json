@@ -5,7 +5,8 @@
     "build": "next build",
     "start": "next start",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d dist --cname stenterstal.com --nojekyll"
+    "deploy": "gh-pages -d dist --cname stenterstal.com --nojekyll",
+    "deploy404": "gh-pages -d dist"
   },
   "dependencies": {
     "date-fns": "^3.6.0",

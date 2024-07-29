@@ -7,14 +7,14 @@
       display: inline-block;
       border-radius: 8px;
       border: 1px solid transparent;
-      padding: 0.3em 1em;
-      font-size: 1em;
+      padding: 0.3em 0.6em;
+      font-size: 1.1em;
       font-weight: 500;
       font-family: inherit;
       background-color: #1a1a1a;
       cursor: pointer;
       transition: border-color 0.25s;
-      margin: 0 0.3em;
+      margin: 0 0.2em;
       &:first-child { margin-left: 0; }
       &:hover {
         border-color: #646cff;

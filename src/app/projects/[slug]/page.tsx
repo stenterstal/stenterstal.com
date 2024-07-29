@@ -5,6 +5,12 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import './Project.scss'
 import React from "react";
 
+type Params = {
+  params: {
+    slug: string;
+  };
+};
+
 export default async function Project({ params }: Params) {
   const project = getProjectBySlug(params.slug);
 
@@ -32,13 +38,6 @@ export default async function Project({ params }: Params) {
     </>
   );
 }
-
-type Params = {
-  params: {
-    slug: string;
-  };
-};
-
 
 export function generateMetadata({params}: Params): Metadata {
   const project = getProjectBySlug(params.slug);

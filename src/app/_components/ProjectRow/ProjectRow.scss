@@ -12,9 +12,11 @@ $element-height: 6.5em; // Thumbnail size is linked to this
   &:hover {
     //border: 1px solid #535bf2;
     background-color: #1a1a1a;
+    box-shadow: 0 0 15px -3px rgba(0,0,0,0.1);
   }
   .thumbnail {
     width: $element-height;
+    height: $element-height;
     border-radius: 3px;
   }
   .text {
@@ -27,6 +29,15 @@ $element-height: 6.5em; // Thumbnail size is linked to this
       text-overflow: ellipsis;
       white-space: nowrap;
       margin: 0;
+    }
+    ul {
+      padding: 0;
+      li {
+        display: inline-block;
+        margin-right: 24px;
+        color: #646cff;
+        font-size: 0.9em;
+      }
     }
     p {
       -webkit-box-orient: vertical;

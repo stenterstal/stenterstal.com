@@ -9,7 +9,7 @@ export default async function Project() {
   return (
       <div className={"projects"}>
         <h1>All projects</h1>
-        <ProjectList projects={projects} tags={tags}/>
+        <ProjectList projects={projects} tags={tags} />
       </div>
   );
 }
