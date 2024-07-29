@@ -17,7 +17,7 @@ export default function ProjectList({projects, tags}: Props){
             <ul className={"tags"}>
                 {tags.map((tagObj) => {
                     const tagName = Object.keys(tagObj)[0];
-                    const tagCount = tagObj[tagName];
+                    const tagCount = tagObj[tagName] as number;
                     return(
                         <li
                             key={tagName}
