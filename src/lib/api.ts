@@ -31,12 +31,14 @@ export function getAllProjects(): Project[] {
 
 export function getAllSortedTags() {
   const projects = getAllProjects();
-  const tags = projects.map((project) => {return project.tags}).flat();
+  const tags = projects
+      .filter(project => project.tags !== undefined)
+      .map((project) => {return project.tags}).flat() as string[];
   return countTagOccurrences(tags);
 }
 
-function countTagOccurrences(tags){
-  const countMap = {};
+function countTagOccurrences(tags: string[]){
+  const countMap: Record<string, number> = {};
 
   tags.forEach(value => {
     countMap[value] = (countMap[value] || 0) + 1;
