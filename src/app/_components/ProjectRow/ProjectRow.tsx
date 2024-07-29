@@ -1,19 +1,20 @@
 'use client'
 
+import React from "react";
 import './ProjectRow.scss'
-import Thumbnail from './thumbnail.jpg';
 import {Project} from "@/interfaces/project";
 import { useRouter } from 'next/navigation'
 
 interface Props {
     project: Project
+    key: string
 }
 
-export default function ProjectRow({project}: Props){
+const ProjectRow: React.FC<Props> = ({project}) => {
     const router = useRouter()
     return(
         <div className={"project"} onClick={() => router.push(`/projects/${project.slug}`)}>
-            <img src={project.coverImage} alt="homelab" className={"thumbnail"}/>
+            <img src={project.thumbnail} alt="project thumbnail" className={"thumbnail"}/>
             <div className="text">
                 <h3>{project.title}</h3>
                 <p>{project.excerpt}</p>
@@ -21,3 +22,5 @@ export default function ProjectRow({project}: Props){
         </div>
     )
 }
+
+export default ProjectRow

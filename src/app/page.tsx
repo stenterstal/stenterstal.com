@@ -1,21 +1,18 @@
 import {getAllProjects} from "@/lib/api";
 import './App.scss'
-import Avatar from '../../public/assets/Avatar.png';
+import Avatar from './Avatar.png';
 import ProjectRow from "@/app/_components/ProjectRow";
 import CardRow from "@/app/_components/CardRow";
 import Image from "next/image";
-
+import Link from "next/link";
 export default function Index() {
-  const projects = getAllProjects();
 
-  // const heroPost = allPosts[0];
-  //
-  // const morePosts = allPosts.slice(1);
+  const projects = getAllProjects();
 
   return (
       <>
         <section className="landing">
-          <Image src={Avatar} alt={"Pixel art self portrait"}/>
+          <Image src={Avatar} alt={"Pixel art self portrait"} quality={100} priority={true}/>
           <div>
             <h1>Sten</h1>
             <h2>Software Engineer</h2>
@@ -28,10 +25,10 @@ export default function Index() {
         <section className="projects">
           <header>
             <h2>Projects ({projects.length})</h2>
-            {projects.length > 3 && <button>View more projects</button>}
+            {projects.length > 3 && <Link href={"/projects/"} className={"view-all"}>View all projects</Link>}
           </header>
           <div className="projects-container">
-            {projects.slice(0, 3).map(project => <ProjectRow project={project}/>)}
+            {projects.slice(0, 3).map(project => <ProjectRow project={project} key={project.slug}/>)}
           </div>
         </section>
         <section className={"experience"}>

@@ -3,6 +3,7 @@ import {notFound} from "next/navigation";
 import {getAllProjects, getProjectBySlug} from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import './Project.scss'
+import React from "react";
 
 export default async function Project({ params }: Params) {
   const project = getProjectBySlug(params.slug);
@@ -16,8 +17,13 @@ export default async function Project({ params }: Params) {
   return (
     <>
       <article>
-        <h1>{project.title}</h1>
-        <h4>{project.date}</h4>
+        <header>
+          <h1>{project.title}</h1>
+          {/*<p>{project.date}</p>*/}
+          <ul>
+            {project.tags && project.tags.map(tag => <li key={tag}>{tag}</li>)}
+          </ul>
+        </header>
         <hr/>
         <div
             dangerouslySetInnerHTML={{__html: content}}

@@ -2,6 +2,7 @@ export type Project = {
   slug: string;
   title: string;
   date: string;
+  thumbnail: string;
   coverImage: string;
   excerpt: string;
   ogImage: {
@@ -9,4 +10,5 @@ export type Project = {
   };
   content: string;
   preview?: boolean;
+  tags: string[] | undefined;
 };

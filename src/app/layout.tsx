@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Avatar from '../../public/assets/Avatar.png'
-
 import './index.scss'
+import './App.scss'
 import Navigation from "@/app/_components/Navigation";
 
 export const metadata: Metadata = {

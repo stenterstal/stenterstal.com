@@ -1,18 +1,16 @@
 import {Metadata} from "next";
-import {getAllProjects} from "@/lib/api";
-import ProjectRow from "@/app/_components/ProjectRow";
+import {getAllProjects, getAllSortedTags} from "@/lib/api";
+import ProjectList from "@/app/_components/ProjectList";
 
 export default async function Project() {
-
   const projects = getAllProjects();
+  const tags = getAllSortedTags();
 
   return (
-      <>
+      <div className={"projects"}>
         <h2>All projects</h2>
-        <div className="projects-container">
-          {projects.map(project => <ProjectRow project={project}/>)}
-        </div>
-      </>
+        <ProjectList projects={projects} tags={tags}/>
+      </div>
   );
 }
 
