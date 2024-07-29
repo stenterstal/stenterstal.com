@@ -15,7 +15,7 @@ export default function Index() {
           <Image src={Avatar} alt={"Pixel art self portrait"} quality={100} priority={true}/>
           <div>
             <h1>Sten</h1>
-            <h2>Software Engineer</h2>
+            <h3>Software Engineer</h3>
             <p><i>Full stack</i> - with a preference for frontend</p>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and

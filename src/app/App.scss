@@ -29,6 +29,9 @@ ul {
 }
 
 .projects {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   header {
     display: flex;
     align-items: center;
@@ -73,7 +76,7 @@ ul {
 
 @media (max-width: 600px) {
   main {
-    margin: 40px auto;
+    margin: 80px auto;
     padding: 1rem;
   }
   section {
@@ -83,8 +86,10 @@ ul {
     flex-direction: column;
     gap: 12px;
   }
-  img {
-    width: 160px;
-    display: block;
-  }
+  //.projects {
+  //  header {
+  //    flex-direction: column;
+  //    align-items: start;
+  //  }
+  //}
 }
