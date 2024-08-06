@@ -17,6 +17,14 @@ nav {
       cursor: pointer;
       align-items: center;
     }
+    .repo {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      a {
+        display: flex;
+      }
+    }
     li {
       display: inline-block;
       list-style: none;

@@ -19,8 +19,24 @@ export default function Index() {
             <p><i>Full stack</i> - with a preference for frontend</p>
             <p>Professionally a full stack developer, a hobbyist while at home.
               In my spare time I like to walk with my dog, read, play video games and experiment with technology.
-              Beside programming I also have an interest in self hosting open source applications and creating a privacy friendly smart home (network).
+              Beside programming I also have an interest in self hosting open source applications and creating a privacy
+              friendly smart home/network.
             </p>
+            <div className="socials">
+              <ul>
+                <li>
+                  <a href="">
+                    <button>LinkedIn</button>
+                  </a>
+                  <a href="">
+                    <button>Github</button>
+                  </a>
+                  <a href="">
+                    <button>Email</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
         <section className="projects">
