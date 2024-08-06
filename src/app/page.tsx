@@ -17,9 +17,10 @@ export default function Index() {
             <h1>Sten</h1>
             <h3>Software Engineer</h3>
             <p><i>Full stack</i> - with a preference for frontend</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book</p>
+            <p>Professionally a full stack developer, a hobbyist while at home.
+              In my spare time I like to walk with my dog, read, play video games and experiment with technology.
+              Beside programming I also have an interest in self hosting open source applications and creating a privacy friendly smart home (network).
+            </p>
           </div>
         </section>
         <section className="projects">
@@ -30,6 +31,7 @@ export default function Index() {
           <div className="projects-container">
             {projects.slice(0, 3).map(project => <ProjectRow project={project} key={project.slug}/>)}
           </div>
+          <Link href={"/projects/"} className={"view-all"}>View all projects</Link>
         </section>
         <section className={"experience"}>
           <h2>Experience & Education</h2>
@@ -43,9 +45,9 @@ export default function Index() {
               JustitieConnect (Javascript
               SPA platform). Implemented this as a Proof of Concept with React as frontend and Django Rest Framework as
               backend<br/><br/></p>
-            <p>Building and maintaining the Justid Service Interfaces (JSI) used for exchanging of information
-              in the judicial chain. Also responsible for deploying an in-house version of <a
-                  target={"_blank"} href="https://developer.overheid.nl">developer.overheid.nl</a> for use in
+            <p>During my actual work I am responsible for building and maintaining various applications using the Justice Service Interfaces (JSI), a service for exchanging information
+              in the judicial chain. Am responsible for deploying an in-house version of <a
+                  target={"_blank"} href="https://developer.overheid.nl">the open source developer.overheid.nl</a> for use in
               the Justice department.</p>
           </CardRow>
           <CardRow

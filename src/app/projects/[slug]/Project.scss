@@ -17,8 +17,24 @@ article {
       }
     }
   }
-  img {
-    width: 700px;
+  .content {
+    img {
+      width: 100%;
+    }
+
+    code {
+      background-color: #111111;
+      padding: 3px 6px 3px 6px;
+      border-radius: 1px;
+    }
+
+    h1, h2, h3, h4, h5 {
+      margin: 20px 0 0 0;
+    }
+
+    p {
+      margin: 1em 0 1em 0;
+    }
   }
 }
 

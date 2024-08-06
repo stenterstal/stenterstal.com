@@ -1,10 +1,10 @@
-$space-between-cardrows: 50px;
+$space-between-cardrows: 40px;
 $space-between-inner-sections: 10px;
 
 .CardRow {
   margin: $space-between-cardrows  0 $space-between-cardrows 0;
-  border-left: 3px solid #646cff;
-  border-radius: 3px;
+  border-left: 4px solid #646cff;
+  border-radius: 4px;
   padding-left: 16px;
 
   h3 {

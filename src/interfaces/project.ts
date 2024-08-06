@@ -1,4 +1,5 @@
 export type Project = {
+  published: boolean;
   slug: string;
   title: string;
   date: string;

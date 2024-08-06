@@ -11,6 +11,7 @@ type Params = {
   };
 };
 
+
 export default async function Project({ params }: Params) {
   const project = getProjectBySlug(params.slug);
 
@@ -32,6 +33,7 @@ export default async function Project({ params }: Params) {
         </header>
         <hr/>
         <div
+            className={"content"}
             dangerouslySetInnerHTML={{__html: content}}
         />
       </article>

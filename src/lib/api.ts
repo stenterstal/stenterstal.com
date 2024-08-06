@@ -22,16 +22,15 @@ export function getAllProjects(): Project[] {
   const slugs = getProjectsSlug();
   return slugs
       .map((slug) => getProjectBySlug(slug))
+      .filter(project => project.published)
       // sort posts by date in descending order
-      .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+      .sort((post1, post2) => (post1.date < post2.date ? -1 : 1));
 }
-
-// export function getAllProjectByYear(): Project[] {
-// }
 
 export function getAllSortedTags() {
   const projects = getAllProjects();
   const tags = projects
+      .filter(project => project.published)
       .filter(project => project.tags !== undefined)
       .map((project) => {return project.tags}).flat() as string[];
   return countTagOccurrences(tags);

@@ -11,7 +11,7 @@ $element-height: 6.5em; // Thumbnail size is linked to this
   border-radius: 3px;
   &:hover {
     //border: 1px solid #535bf2;
-    background-color: #1a1a1a;
+    background-color: #202020;
     box-shadow: 0 0 15px -3px rgba(0,0,0,0.1);
   }
   .thumbnail {
@@ -48,6 +48,19 @@ $element-height: 6.5em; // Thumbnail size is linked to this
       white-space: normal;
       //text-align: justify;
       margin: 0;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    gap: 6px;
+    .thumbnail {
+      width: 5.8em;
+      height: 5.8em;
+    }
+    .text {
+      padding: 6px;
     }
   }
 }
