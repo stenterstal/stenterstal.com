@@ -52,7 +52,7 @@ export default function Index() {
           <div className="projects-container">
             {projects.slice(0, 3).map(project => <ProjectRow project={project} key={project.slug}/>)}
           </div>
-          <Link href={"/projects/"} className={"view-all"}>View all projects</Link>
+          {projects.length > 3 && <Link href={"/projects/"} className={"view-all"}>View all projects</Link>}
         </section>
         <section className={"experience"}>
           <h2>Experience & Education</h2>

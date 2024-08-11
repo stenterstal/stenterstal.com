@@ -40,3 +40,11 @@ $space-between-inner-sections: 10px;
     }
   }
 }
+
+@media (max-width: 600px) {
+  .CardRow {
+    margin-left: -1rem;
+    border-radius: 0;
+    border-left-width: 3px;
+  }
+}

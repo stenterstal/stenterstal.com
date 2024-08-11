@@ -1,6 +1,6 @@
 main {
   max-width: 1000px;
-  margin: 120px auto 60px auto;
+  margin: 100px auto 60px auto;
   padding: 1rem 30px 1rem 30px;
   display: flex;
   flex-direction: column;
@@ -130,7 +130,6 @@ ul {
     }
     .socials {
       justify-content: space-between;
-      margin: 0 4px;
       a {
         svg {
           margin-right: 8px;
