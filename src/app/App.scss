@@ -11,6 +11,10 @@ section {
   margin: 20px 0 20px 0;
 }
 
+.icon {
+  height: 1.3em;
+}
+
 .landing {
   display: flex;
   align-items: center;
@@ -18,6 +22,11 @@ section {
   flex-direction: row;
   flex: 1;
   margin-top: 0;
+  img {
+    width: 12em; //192px
+    height: 12.75em; //204px
+  }
+
   h1 {
     margin-bottom: 6px;
   }
@@ -27,10 +36,16 @@ section {
   .socials {
     ul {
       padding: 0;
+      display: flex;
       li {
         list-style: none;
         a {
-          margin-right: 12px;
+          margin-right: 24px;
+          display: flex;
+          align-items: center;
+          .icon {
+            margin-right: 6px;
+          }
         }
       }
     }
@@ -102,7 +117,7 @@ ul {
 
 @media (max-width: 600px) {
   main {
-    margin: 60px auto 20px auto;
+    margin: 50px auto 20px auto;
     padding: 1rem;
   }
   section {
@@ -118,6 +133,7 @@ ul {
         padding: 0;
         li {
           list-style: none;
+          flex: 1;
           a {
             margin-right: 12px;
           }

@@ -1,7 +1,7 @@
 'use client'
 
 import './Navigation.scss'
-import Avatar from '../../Avatar.png';
+import Avatar from '../../../../public/assets/img/Avatar.png';
 import Github from './github.svg';
 import Link from "next/link";
 import Image from "next/image";

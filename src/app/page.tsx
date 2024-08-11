@@ -1,10 +1,14 @@
 import {getAllProjects} from "@/lib/api";
 import './App.scss'
-import Avatar from './Avatar.png';
+import Avatar from '../../public/assets/img/Avatar.png';
 import ProjectRow from "@/app/_components/ProjectRow";
 import CardRow from "@/app/_components/CardRow";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faLinkedinIn, faGithub} from "@fortawesome/free-brands-svg-icons";
+import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
+
 export default function Index() {
 
   const projects = getAllProjects();
@@ -12,7 +16,7 @@ export default function Index() {
   return (
       <>
         <section className="landing">
-          <Image src={Avatar} alt={"Pixel art self portrait"} quality={100} priority={true}/>
+          <Image src={Avatar} height={204} width={192} alt={"Pixel art self portrait"} quality={100} priority={true}/>
           <div>
             <h1>Sten</h1>
             <h3>Software Engineer</h3>
@@ -25,14 +29,21 @@ export default function Index() {
             <div className="socials">
               <ul>
                 <li>
-                  <a href="">
-                    <button>LinkedIn</button>
+                  <a href="https://linkedin.com/in/stenterstal">
+                    <FontAwesomeIcon icon={faLinkedinIn} className={"icon"} />
+                    LinkedIn
                   </a>
-                  <a href="">
-                    <button>Github</button>
+                </li>
+                <li>
+                  <a href="https://github.com/stenterstal">
+                    <FontAwesomeIcon icon={faGithub} className={"icon"}/>
+                    Github
                   </a>
-                  <a href="">
-                    <button>Email</button>
+                </li>
+                <li>
+                  <a href="mailto:mail@stenterstal.com">
+                    <FontAwesomeIcon icon={faEnvelope} className={"icon"}/>
+                    Email
                   </a>
                 </li>
               </ul>
