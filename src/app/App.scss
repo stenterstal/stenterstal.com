@@ -26,27 +26,25 @@ section {
     width: 12em; //192px
     height: 12.75em; //204px
   }
-
   h1 {
     margin-bottom: 6px;
   }
   h3 {
     margin-top: 0;
   }
+  p {
+    text-align: justify;
+  }
   .socials {
-    ul {
-      padding: 0;
+    display: flex;
+    flex: 1;
+    padding: 0;
+    a {
+      align-items: center;
       display: flex;
-      li {
-        list-style: none;
-        a {
-          margin-right: 24px;
-          display: flex;
-          align-items: center;
-          .icon {
-            margin-right: 6px;
-          }
-        }
+      margin-right: 24px;
+      svg {
+        margin-right: 4px;
       }
     }
   }
@@ -126,17 +124,16 @@ ul {
   .landing {
     flex-direction: column;
     gap: 12px;
+    margin-top: 1em;
+    p {
+      text-align: left;
+    }
     .socials {
-      ul {
-        display: flex;
-        flex: 1;
-        padding: 0;
-        li {
-          list-style: none;
-          flex: 1;
-          a {
-            margin-right: 12px;
-          }
+      justify-content: space-between;
+      margin: 0 4px;
+      a {
+        svg {
+          margin-right: 8px;
         }
       }
     }
@@ -152,8 +149,8 @@ ul {
       flex: 1;
       width: 100%;
       justify-content: center;
-      margin-top: 16px;
-      padding: 0.6em 0 0.6em 0;
+      margin-top: 1.2em;
+      padding: 0.6em 0;
     }
   }
 }

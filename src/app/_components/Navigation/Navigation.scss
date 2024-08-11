@@ -25,14 +25,17 @@ nav {
         display: flex;
       }
     }
+    .active {
+      background-color: #1a1a1a;
+    }
     li {
       display: inline-block;
       list-style: none;
       padding: 8px 14px 8px 14px;
       margin: 0 6px 0 6px;
+      border-radius: 6px;
       &:hover {
         background-color: #1a1a1a;
-        border-radius: 6px;
       }
       a {
         color: rgba(255, 255, 255, 0.87);
@@ -47,7 +50,7 @@ nav {
 @media (max-width: 600px) {
   nav {
     ul {
-      padding: 8px;
+      padding: 8px 16px;
     }
   }
 }

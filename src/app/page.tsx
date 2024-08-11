@@ -27,26 +27,20 @@ export default function Index() {
               friendly smart home/network.
             </p>
             <div className="socials">
-              <ul>
-                <li>
-                  <a href="https://linkedin.com/in/stenterstal">
-                    <FontAwesomeIcon icon={faLinkedinIn} className={"icon"} />
-                    LinkedIn
-                  </a>
-                </li>
-                <li>
-                  <a href="https://github.com/stenterstal">
-                    <FontAwesomeIcon icon={faGithub} className={"icon"}/>
-                    Github
-                  </a>
-                </li>
-                <li>
-                  <a href="mailto:mail@stenterstal.com">
-                    <FontAwesomeIcon icon={faEnvelope} className={"icon"}/>
-                    Email
-                  </a>
-                </li>
-              </ul>
+              <a href="https://linkedin.com/in/stenterstal">
+                <FontAwesomeIcon icon={faLinkedinIn} className={"icon"}/>
+                <span>
+                  LinkedIn
+                </span>
+              </a>
+              <a href="https://github.com/stenterstal">
+                <FontAwesomeIcon icon={faGithub} className={"icon"}/>
+                Github
+              </a>
+              <a href="mailto:mail@stenterstal.com">
+                <FontAwesomeIcon icon={faEnvelope} className={"icon"}/>
+                Email
+              </a>
             </div>
           </div>
         </section>
