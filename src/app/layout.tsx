@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
           <meta name="theme-color" content="#000"/>
-          <link rel="icon" type="image/svg+xml" href="/favicon/favicon.png"/>
+          <link rel="icon" type="image/svg+xml" href="/favicon/icon.png"/>
           <link rel="alternate" type="application/rss+xml" href="/feed.xml"/>
       </head>
       <body>
