@@ -1,4 +1,5 @@
 $element-height: 6.5em; // Thumbnail size is linked to this
+$element-height-mobile: 5.8em;
 .project {
   display: flex;
   flex: 1;
@@ -17,11 +18,7 @@ $element-height: 6.5em; // Thumbnail size is linked to this
       }
     }
   }
-  .thumbnail-bg {
-    width: $element-height;
-    height: $element-height;
-  }
-  .thumbnail {
+  .thumbnail, .thumbnail-bg{
     width: $element-height;
     height: $element-height;
     border-radius: 3px;
@@ -60,11 +57,12 @@ $element-height: 6.5em; // Thumbnail size is linked to this
 }
 
 @media (max-width: 600px) {
+  $element-height: 5.8em;
   .project {
     gap: 6px;
-    .thumbnail {
-      width: 5.8em;
-      height: 5.8em;
+    .thumbnail, .thumbnail-bg {
+      width: $element-height-mobile;
+      height: $element-height-mobile;
     }
     .text {
       padding: 6px;
