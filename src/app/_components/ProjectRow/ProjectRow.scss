@@ -6,13 +6,20 @@ $element-height: 6.5em; // Thumbnail size is linked to this
   gap: 15px;
   height: $element-height;
   cursor: pointer;
-  //border: 1px solid transparent;
-  //padding: 8px;
   border-radius: 3px;
   &:hover {
-    //border: 1px solid #535bf2;
-    background-color: #202020;
+    background-color: #191919;
     box-shadow: 0 0 15px -3px rgba(0,0,0,0.1);
+    .thumbnail-bg {
+      background-color: #646cff;
+      .thumbnail {
+        opacity: 0.6;
+      }
+    }
+  }
+  .thumbnail-bg {
+    width: $element-height;
+    height: $element-height;
   }
   .thumbnail {
     width: $element-height;

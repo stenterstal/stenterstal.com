@@ -14,7 +14,9 @@ const ProjectRow: React.FC<Props> = ({project}) => {
     const router = useRouter()
     return(
         <div className={"project"} onClick={() => router.push(`/projects/${project.slug}`)}>
-            <img src={project.thumbnail} alt="project thumbnail" className={"thumbnail"}/>
+            <div className="thumbnail-bg">
+                <img src={project.thumbnail} alt="project thumbnail" className={"thumbnail"}/>
+            </div>
             <div className="text">
                 <h3>{project.title}</h3>
                 <p>{project.excerpt}</p>
