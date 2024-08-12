@@ -4,11 +4,16 @@ import './App.scss'
 import Navigation from "@/app/_components/Navigation";
 
 export const metadata: Metadata = {
-  title: `Sten ter Stal | Personal Website`,
-  description: `Online resume and collection of projects`,
-  openGraph: {
-    // images: [HOME_OG_IMAGE_URL],
-  },
+    metadataBase: new URL('https://stenterstal.com'),
+    title: `Sten ter Stal | Full Stack Software Engineer`,
+    description: `Online resume and collection of projects`,
+    openGraph: {
+        locale: 'en_US',
+        images: [{
+            url: "/assets/img/Avatar.png",
+            alt: 'Pixelated avatar'
+        }],
+    },
 };
 
 export default function RootLayout({
