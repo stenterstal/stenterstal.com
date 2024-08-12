@@ -23,6 +23,9 @@ nav {
       justify-content: flex-end;
       a {
         display: flex;
+        &:hover {
+          border-bottom-color: transparent;
+        }
       }
     }
     .active {
@@ -31,17 +34,19 @@ nav {
     li {
       display: inline-block;
       list-style: none;
-      padding: 8px 14px 8px 14px;
-      margin: 0 6px 0 6px;
+      padding: 0;
+      margin: 0 12px 0 0;
       border-radius: 6px;
       &:hover {
         background-color: #1a1a1a;
       }
       a {
         color: rgba(255, 255, 255, 0.87);
+        padding: 6px 14px;
+        display: block;
         &:hover {
           color: #FFF;
-          border-bottom: none;
+          border-bottom-color: transparent;
         }
       }
     }

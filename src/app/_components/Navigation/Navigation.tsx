@@ -12,20 +12,16 @@ import classNames from "classnames";
 export default function Navigation(){
     const router = useRouter()
     const currentPath = usePathname();
-    console.log(currentPath)
     return(
         <nav>
             <ul>
-                <li className={classNames({
-                    "title": true,
-                    "active": currentPath === "/"
-                })} onClick={() => router.push('/')}>
-                    <Image src={Avatar} alt={"portrait"} height={24}/>
-                    Sten ter Stal
+                <li className={classNames({"active": currentPath === "/"})} onClick={() => router.push('/')}>
+                    <Link href={"/"} className={"title"}>
+                        <Image src={Avatar} alt={"portrait"} height={24}/>
+                        Sten ter Stal
+                    </Link>
                 </li>
-                <li className={classNames({
-                    "active": currentPath.startsWith("/projects")
-                })}>
+                <li className={classNames({"active": currentPath.startsWith("/projects")})}>
                     <Link href={"/projects/"}>Projects</Link>
                 </li>
                 <div className="repo">
