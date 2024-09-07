@@ -18,11 +18,14 @@ export default function Navigation(){
                 <li className={classNames({"active": currentPath === "/"})} onClick={() => router.push('/')}>
                     <Link href={"/"} className={"title"}>
                         <Image src={Avatar} alt={"portrait"} height={24}/>
-                        Sten ter Stal
+                        Sten
                     </Link>
                 </li>
                 <li className={classNames({"active": currentPath.startsWith("/projects")})}>
                     <Link href={"/projects/"}>Projects</Link>
+                </li>
+                <li className={classNames({"active": currentPath.startsWith("/cheatsheets")})}>
+                    <Link href={"/cheatsheets/"}>Cheatsheets</Link>
                 </li>
                 <div className="repo">
                     <a href="https://github.com/stenterstal/stenterstal.github.io">

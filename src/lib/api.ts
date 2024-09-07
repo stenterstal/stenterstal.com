@@ -2,8 +2,14 @@ import {Project} from "@/interfaces/project";
 import fs from "fs";
 import matter from "gray-matter";
 import {join} from "path";
+import {Cheatsheet} from "@/interfaces/cheatsheet.ts";
 
 const projectsDirectory = join(process.cwd(), "_projects");
+const cheatsheetsDirectory = join(process.cwd(), "_cheatsheets");
+
+//
+//  Projects
+//
 
 export function getProjectsSlug() {
   return fs.readdirSync(projectsDirectory);
@@ -46,4 +52,26 @@ function countTagOccurrences(tags: string[]){
   return Object.entries(countMap)
       .sort((a, b) => b[1] - a[1])
       .map(([tag, count]) => {return {[tag]: count}})
+}
+
+//
+//  Cheatsheets
+//
+
+export function getCheatsheetSlug() {
+  return fs.readdirSync(cheatsheetsDirectory);
+}
+
+export function getCheatsheetBySlug(slug: string) {
+  const realSlug = slug.replace(/\.md$/, "");
+  const fullPath = join(cheatsheetsDirectory, `${realSlug}.md`);
+  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const { data, content } = matter(fileContents);
+
+  return { ...data, slug: realSlug, content } as Cheatsheet;
+}
+
+export function getAllCheatsheets(): Cheatsheet[] {
+  const slugs = getCheatsheetSlug();
+  return slugs.map((slug) => getCheatsheetBySlug(slug));
 }

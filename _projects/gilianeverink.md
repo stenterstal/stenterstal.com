@@ -11,7 +11,7 @@ tags:
   - react
 ---
 
-![aaa](/assets/blog/gilianeverink.nl/preview.png)
+![Website preview](/assets/blog/gilianeverink.nl/preview.png)
 
 A friend of mine approached me with the question if I could make a simple minimalist website for him to replace his default namecheap parking page. 
 His domain is generally only used to host mail but some more technological knowledgeable people might try to browse to [gilianeverink.nl](https://gilianeverink.nl) when handing them your email adress.
