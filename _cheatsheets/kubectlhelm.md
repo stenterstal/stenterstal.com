@@ -23,3 +23,11 @@ kubectl cp /home/sten/Downloads/<newfile> <pod-name>:/path/<file>   // Copy file
 ```shell 
 kubectl cp <pod-name>:/path/<file> /home/sten/Downloads/<newfile>   // Copy file from pod to local machine
 ```
+
+### Helm
+```shell 
+helm create <name>                        // Creates a chart directory
+```
+```shell 
+helm package <chart-path>                 // Package a chart, using a charts/<chart-path> directory
+```

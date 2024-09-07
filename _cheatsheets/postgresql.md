@@ -1,5 +1,5 @@
 ---
-published: true
+published: false
 title: "Postgresql"
 thumbnail: "/assets/img/cheatsheet_icons/postgresql.jpg"
 ---

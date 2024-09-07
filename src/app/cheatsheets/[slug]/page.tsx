@@ -1,9 +1,9 @@
 import {Metadata} from "next";
 import {notFound} from "next/navigation";
 import {getAllCheatsheets, getCheatsheetBySlug} from "@/lib/api";
-import markdownToHtml from "@/lib/markdownToHtml";
 import React from "react";
 import './Cheatsheet.scss'
+import Markdown from "@/app/_components/Markdown/Markdown.tsx";
 
 type Params = {
   params: {
@@ -19,20 +19,15 @@ export default async function Cheatsheet({ params }: Params) {
     return notFound();
   }
 
-  const content = await markdownToHtml(cheatsheet.content || "");
-
   return (
     <>
-      <article>
+      <article className={"cheatsheet-article"}>
         <header>
           <img src={cheatsheet.thumbnail}  alt={`${cheatsheet.title}-icon`}/>
           <h1>{cheatsheet.title}</h1>
         </header>
         <hr/>
-        <div
-            className={"content"}
-            dangerouslySetInnerHTML={{__html: content}}
-        />
+        <Markdown content={cheatsheet.content}/>
       </article>
     </>
   );

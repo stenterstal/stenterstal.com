@@ -1,9 +1,9 @@
 import {Metadata} from "next";
 import {notFound} from "next/navigation";
 import {getAllProjects, getProjectBySlug} from "@/lib/api";
-import markdownToHtml from "@/lib/markdownToHtml";
 import './Project.scss'
 import React from "react";
+import ReactMarkDown from "react-markdown";
 
 type Params = {
   params: {
@@ -19,11 +19,9 @@ export default async function Project({ params }: Params) {
     return notFound();
   }
 
-  const content = await markdownToHtml(project.content || "");
-
   return (
     <>
-      <article>
+      <article className={"projects-article"}>
         <header>
           <h1>{project.title}</h1>
           {/*<p>{project.date}</p>*/}
@@ -32,10 +30,9 @@ export default async function Project({ params }: Params) {
           </ul>
         </header>
         <hr/>
-        <div
-            className={"content"}
-            dangerouslySetInnerHTML={{__html: content}}
-        />
+        <ReactMarkDown className={"content"}>
+          {project.content}
+        </ReactMarkDown>
       </article>
     </>
   );

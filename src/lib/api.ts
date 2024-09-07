@@ -73,5 +73,5 @@ export function getCheatsheetBySlug(slug: string) {
 
 export function getAllCheatsheets(): Cheatsheet[] {
   const slugs = getCheatsheetSlug();
-  return slugs.map((slug) => getCheatsheetBySlug(slug));
+  return slugs.map((slug) => getCheatsheetBySlug(slug)).filter(cheatsheet => cheatsheet.published);
 }

@@ -8,7 +8,6 @@ ogImage:
   url: "/assets/blog/gilianeverink.nl/thumbnail.png"
 tags:
   - webdev
-  - react
 ---
 
 ![Website preview](/assets/blog/gilianeverink.nl/preview.png)
