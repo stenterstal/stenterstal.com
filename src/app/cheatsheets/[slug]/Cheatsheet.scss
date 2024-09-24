@@ -19,6 +19,15 @@
       cursor: pointer;
       font-size: 14px;
       margin: 8px 0;
+      white-space: pre-wrap;
+      code {
+        padding: 0;
+      }
+    }
+    code {
+      background-color: #111111;
+      padding: 0.2em 0.5em;
+      border-radius: 0.25em;
     }
   }
 }

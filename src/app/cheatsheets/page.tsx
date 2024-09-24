@@ -6,13 +6,13 @@ import './page.scss'
 export default async function Cheatsheets() {
     const cheatsheets = getAllCheatsheets();
     return (
-        <div className={"cheatsheets"}>
+        <section className={"cheatsheets"}>
             <h1>Cheatsheets</h1>
             <p>Quick cheatsheet references, mostly for personal use</p>
             <div className="container">
-                {cheatsheets.map(cheatsheet => <CheatsheetRow cheatsheet={cheatsheet}/>)}
+                {cheatsheets.map(cheatsheet => <CheatsheetRow cheatsheet={cheatsheet} key={cheatsheet.slug}/>)}
             </div>
-        </div>
+        </section>
     );
 }
 

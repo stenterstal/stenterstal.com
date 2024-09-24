@@ -1,14 +1,21 @@
 main {
   max-width: 1000px;
-  margin: 120px auto 60px auto;
-  padding: 1rem 30px 1rem 30px;
+  min-width: 320px;
+  margin: 0 auto 0 auto;
+  padding: 120px 30px 0 30px;
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
+  .main-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
 }
 
 section {
-  max-width: 1000px;
   margin: 30px 0 30px 0;
+  &:first-child { margin-top: 0}
 }
 
 .icon {
@@ -42,9 +49,9 @@ section {
     a {
       align-items: center;
       display: flex;
-      margin-right: 24px;
+      margin-right: 32px;
       svg {
-        margin: 1px 4px 0 0;
+        margin: 1px 6px 0 0;
       }
     }
   }
@@ -115,11 +122,12 @@ ul {
 
 @media (max-width: 600px) {
   main {
-    margin: 60px auto 20px auto;
-    padding: 1rem;
+    margin: 60px auto 0 auto;
+    padding: 1rem 1rem 0 1rem;
   }
   section {
     margin: 20px 0 20px 0;
+
   }
   .landing {
     flex-direction: column;
