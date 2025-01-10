@@ -74,8 +74,26 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+// Big high DPI screens
 @media only screen and (min-width: 2000px) {
   :root {
     font-size: 20px;
+  }
+}
+
+// Mobile phones
+@media (max-width: 600px) {
+  :root {
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.3rem;
+    }
   }
 }

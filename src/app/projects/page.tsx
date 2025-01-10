@@ -8,7 +8,7 @@ export default async function Project() {
 
   return (
       <section className={"projects"}>
-        <h2>All projects</h2>
+        <h1>All projects</h1>
         <ProjectList projects={projects} tags={tags} />
       </section>
   );
