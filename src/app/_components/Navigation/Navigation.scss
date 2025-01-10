@@ -1,54 +1,58 @@
 nav {
   top: 0;
   position: fixed;
-  width: 100%;
+  z-index: 999;
+  width: 100vw;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   background-color: #242424;
   font-size: 1.1em;
-  ul {
-    max-width: 1000px;
-    padding: 1rem;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  .container {
     display: flex;
-    align-items: center;
-    .title {
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto 0 auto;
+    padding: 1rem;
+    ul {
       display: flex;
-      gap: 8px;
-      cursor: pointer;
+      flex: 1;
+      padding: 0;
       align-items: center;
+      .title {
+        display: flex;
+        gap: 8px;
+        cursor: pointer;
+        align-items: center;
+      }
+      li {
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin: 0 12px 0 0;
+        border-radius: 6px;
+        &.active {
+          background-color: #1a1a1a;
+        }
+        &:hover {
+          background-color: #1a1a1a;
+        }
+        a {
+          color: rgba(255, 255, 255, 0.87);
+          padding: 6px 14px;
+          display: block;
+          &:hover {
+            color: #FFF;
+            border-bottom-color: transparent;
+          }
+        }
+      }
     }
     .repo {
       display: flex;
-      flex: 1;
-      justify-content: flex-end;
-      a {
-        display: flex;
-        &:hover {
-          border-bottom-color: transparent;
-        }
-      }
-    }
-    .active {
-      background-color: #1a1a1a;
-    }
-    li {
-      display: inline-block;
-      list-style: none;
-      padding: 0;
-      margin: 0 12px 0 0;
-      border-radius: 6px;
-      &:hover {
-        background-color: #1a1a1a;
-      }
-      a {
-        color: rgba(255, 255, 255, 0.87);
-        padding: 6px 14px;
-        display: block;
-        &:hover {
-          color: #FFF;
-          border-bottom-color: transparent;
-        }
-      }
+      align-items: center;
+      padding-right: 1rem;
+      &:hover { border-color: transparent }
     }
   }
 }
@@ -56,7 +60,13 @@ nav {
 @media (max-width: 600px) {
   nav {
     ul {
-      padding: 8px 16px;
+      padding: 8px 12px;
+      li {
+        a {
+          font-size: 16px;
+          padding: 6px 10px;
+        }
+      }
     }
   }
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import './index.scss'
 import './App.scss'
 import Navigation from "@/app/_components/Navigation";
+import Footer from "@/app/_components/Footer";
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://stenterstal.com'),
@@ -29,9 +30,12 @@ export default function RootLayout({
           <link rel="alternate" type="application/rss+xml" href="/feed.xml"/>
       </head>
       <body>
-        <Navigation/>
+          <Navigation/>
           <main>
-              {children}
+              <div className={"main-container"}>
+                  {children}
+              </div>
+              <Footer/>
           </main>
       </body>
     </html>

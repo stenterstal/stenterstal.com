@@ -27,6 +27,7 @@ $element-height-mobile: 5.8em;
     padding: 8px;
     overflow: hidden;
     flex-direction: column;
+    display: flex;
     h3 {
       flex-shrink: 0;
       overflow: hidden;
@@ -52,6 +53,7 @@ $element-height-mobile: 5.8em;
       white-space: normal;
       //text-align: justify;
       margin: 0;
+      flex: 1;
     }
   }
 }

@@ -7,10 +7,10 @@ export default async function Project() {
   const tags = getAllSortedTags();
 
   return (
-      <div className={"projects"}>
+      <section className={"projects"}>
         <h1>All projects</h1>
         <ProjectList projects={projects} tags={tags} />
-      </div>
+      </section>
   );
 }
 

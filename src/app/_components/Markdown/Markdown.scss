@@ -1,0 +1,17 @@
+.codeBlock {
+  position: relative;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+  .copiedMessage {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 8px;
+    color: #FAFAFA;
+  }
+  .active {
+    visibility: visible;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+}
