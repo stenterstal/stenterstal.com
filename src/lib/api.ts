@@ -29,8 +29,9 @@ export function getAllProjects(): Project[] {
   return slugs
       .map((slug) => getProjectBySlug(slug))
       .filter(project => project.published)
-      // sort posts by date in descending order
-      .sort((post1, post2) => (post1.date < post2.date ? -1 : 1));
+      .sort((post1, post2) => {
+        return (post1.date.split("-").reverse().join() > post2.date.split("-").reverse().join() ? -1 : 1)
+      });
 }
 
 export function getAllSortedTags() {

@@ -60,20 +60,20 @@ export default function Index() {
               type={"Work"}
               title={"Software Engineer"}
               place={"Justid"}
-              date={"nov 2022- present"}
+              date={"nov 2022 - present"}
               tags={["Angular", "Python", "Django", "Kubernetes", "Jenkins", "Docker"]}>
             <p>During my Graduation project I did research on how to migrate an existing server-side MVC application to
               JustitieConnect (Javascript
-              SPA platform). Implemented this as a Proof of Concept with React as frontend and Django Rest Framework as
+              SPA platform). I implemented this as a Proof of Concept with React as frontend and Django Rest Framework as
               backend<br/><br/></p>
-            <p>During my actual work I am responsible for building and maintaining various applications using the Justice Service Interfaces (JSI), a service for exchanging information
-              in the judicial chain. Am responsible for deploying an in-house version of <a
-                  target={"_blank"} href="https://developer.overheid.nl">the open source developer.overheid.nl</a> for use in
-              the Justice department.</p>
+            <p>During my actual work I am responsible for building and maintaining various applications called the Justice Service Interface (JSI), a platform/framework to support exchanging information
+              in the judicial chain. I'm  also responsible for deploying and maintaining an in-house version of <a
+                  target={"_blank"} href="https://developer.overheid.nl">the open source developer.overheid.nl project</a> for use in
+              the Justice department to promote the use of API's to exchange information.</p>
           </CardRow>
           <CardRow
               type={"Work"}
-              title={"Student Job Frontend Developer"}
+              title={"Internship & Student Job Frontend Developer"}
               place={"Fortes"}
               date={"feb 2021 - nov 2021"}
               tags={["React", "Backbone.js"]}>

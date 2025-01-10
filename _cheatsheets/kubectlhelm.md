@@ -3,7 +3,10 @@ published: true
 title: "Kubectl / Helm"
 thumbnail: "/assets/img/cheatsheet_icons/kubectl.png"
 ---
+### Kubectl multiple environments / configs
+Paste all config files to `.kube/...` folder.
 
+In system environment variables set `KUBECONFIG=path/to/.kube/config1.yaml,path/to/.kube/config2.yaml`
 ### Kubectl contexts
 ```shell 
 kubectl config get-contexts               //Display list of contexts

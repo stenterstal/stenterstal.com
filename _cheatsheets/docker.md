@@ -9,5 +9,5 @@ thumbnail: "/assets/img/cheatsheet_icons/docker.png"
 services:
   web:
     ports:
-      - <HOST_PORT>:<CONTAINER_PORT>        // Speaks for itself
+      - <HOST_PORT>:<CONTAINER_PORT> // Map container port to system/host port
 ```
