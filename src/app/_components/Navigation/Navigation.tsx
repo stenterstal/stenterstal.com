@@ -18,7 +18,7 @@ export default function Navigation(){
                 <ul>
                     <li className={classNames({"active": currentPath === "/"})} onClick={() => router.push('/')}>
                         <Link href={"/"} className={"title"}>
-                            <Image src={Avatar} alt={"portrait"} height={24}/>
+                            {/*<Image src={Avatar} alt={"portrait"} height={24}/>*/}
                             Sten ter Stal
                         </Link>
                     </li>

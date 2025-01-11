@@ -16,7 +16,7 @@ export default function Index() {
   return (
       <>
         <section className="landing">
-          <Image src={Avatar} height={204} width={192} alt={"Pixel art self portrait"} quality={100} priority={true}/>
+          {/*<Image src={Avatar} height={204} width={192} alt={"Pixel art self portrait"} quality={100} priority={true}/>*/}
           <div>
             <h1>Sten</h1>
             <h3>Software Engineer</h3>
