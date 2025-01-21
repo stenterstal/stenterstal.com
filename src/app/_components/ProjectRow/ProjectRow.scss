@@ -45,13 +45,9 @@ $element-height-mobile: 5.8em;
       }
     }
     p {
-      -webkit-box-orient: vertical;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: normal;
-      //text-align: justify;
       margin: 0;
       flex: 1;
     }
