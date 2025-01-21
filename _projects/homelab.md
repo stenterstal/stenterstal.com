@@ -1,7 +1,7 @@
 ---
 published: true
 title: "Home server self-hosting"
-excerpt: "Short overview of the why and how of my server rack and the applications hosted on it, giving me back control of my data and privacy while also providing a good learning experience."
+excerpt: "Short overview of the why and how of my server rack and the applications hosted on it, giving back control of data and privacy while also providing a good learning experience."
 thumbnail: "/assets/blog/homelab/thumbnail.jpg"
 date: "25-10-2024"
 ogImage:
