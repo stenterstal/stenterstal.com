@@ -8,6 +8,8 @@ $element-height-mobile: 5.8em;
   height: $element-height;
   cursor: pointer;
   border-radius: 3px;
+  width: 100%;
+  overflow: hidden;
   &:hover {
     background-color: #191919;
     box-shadow: 0 0 15px -3px rgba(0,0,0,0.1);
@@ -26,10 +28,7 @@ $element-height-mobile: 5.8em;
   .text {
     padding: 8px;
     overflow: hidden;
-    flex-direction: column;
-    display: flex;
     h3 {
-      flex-shrink: 0;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
@@ -45,6 +44,9 @@ $element-height-mobile: 5.8em;
       }
     }
     p {
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: normal;
