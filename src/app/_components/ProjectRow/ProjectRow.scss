@@ -1,4 +1,4 @@
-$element-height: 6.5em; // Thumbnail size is linked to this
+$element-height: 10em; // Thumbnail size is linked to this
 $element-height-mobile: 5.8em;
 .project {
   display: flex;
@@ -45,7 +45,7 @@ $element-height-mobile: 5.8em;
     }
     p {
       -webkit-box-orient: vertical;
-      -webkit-line-clamp: 2;
+      -webkit-line-clamp: 4;
       display: -webkit-box;
       overflow: hidden;
       text-overflow: ellipsis;
