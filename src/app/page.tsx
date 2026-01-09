@@ -20,12 +20,6 @@ export default function Index() {
           <div>
             <h1>Sten</h1>
             <h3>Software Engineer</h3>
-            <p><i>Full stack</i> - with a preference for frontend</p>
-            <p>Professionally a full stack developer, a hobbyist while at home.
-              In my spare time I like to walk with my dog, read, play video games and experiment with technology.
-              Beside programming I also have an interest in self hosting open source applications and creating a privacy
-              friendly smart home/network.
-            </p>
             <div className="socials">
               <a href="https://linkedin.com/in/stenterstal">
                 <FontAwesomeIcon icon={faLinkedinIn} className={"icon"}/>
@@ -37,22 +31,8 @@ export default function Index() {
                 <FontAwesomeIcon icon={faGithub} className={"icon"}/>
                 Github
               </a>
-              <a href="mailto:mail@stenterstal.com">
-                <FontAwesomeIcon icon={faEnvelope} className={"icon"}/>
-                Email
-              </a>
             </div>
           </div>
-        </section>
-        <section className="projects">
-          <header>
-            <h2>Projects ({projects.length})</h2>
-            {projects.length > 3 && <Link href={"/projects/"} className={"view-all"}>View all projects</Link>}
-          </header>
-          <div className="projects-container">
-            {projects.slice(0, 3).map(project => <ProjectRow project={project} key={project.slug}/>)}
-          </div>
-          {projects.length > 3 && <Link href={"/projects/"} className={"view-all"}>View all projects</Link>}
         </section>
         <section className={"experience"}>
           <h2>Experience & Education</h2>

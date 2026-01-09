@@ -22,9 +22,6 @@ export default function Navigation(){
                             Sten ter Stal
                         </Link>
                     </li>
-                    <li className={classNames({"active": currentPath.startsWith("/projects")})}>
-                        <Link href={"/projects/"}>Projects</Link>
-                    </li>
                 </ul>
                 <a className="repo" href="https://github.com/stenterstal/stenterstal.github.io">
                     <Image src={Github} alt={"github-repo-link"} height={22}/>
