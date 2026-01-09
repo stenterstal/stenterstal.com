@@ -129,22 +129,6 @@ ul {
     margin: 20px 0 20px 0;
 
   }
-  .landing {
-    flex-direction: column;
-    gap: 12px;
-    padding-top: 1.5em;
-    p {
-      text-align: left;
-    }
-    .socials {
-      justify-content: space-between;
-      a {
-        svg {
-          margin-right: 8px;
-        }
-      }
-    }
-  }
   .projects {
     header {
       .view-all {
